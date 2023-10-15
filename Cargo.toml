@@ -1,0 +1,21 @@
+[package]
+authors = ["BB-301 <fw3dg3@gmail.com>"]
+description = "A Rust library that exposes a simple Iced loading indicator widget that works with Iced's default renderer and built-in theme."
+edition = "2021"
+keywords = ["rust", "iced", "widget", "loading indicator", "gui"]
+license = "MIT"
+name = "iced-loading-indicator"
+repository = "https://github.com/BB-301/iced-loading-indicator"
+version = "0.1.0"
+
+[lib]
+doctest = false
+name = "iced_loading_indicator"
+path = "src/lib.rs"
+
+[dependencies]
+iced_style = "0.9.0"
+iced_widget = {version = "0.1", features = ["canvas"]}
+
+[dev-dependencies]
+iced = {version = "0.10.0", features = ["tokio", "lazy", "advanced"]}
